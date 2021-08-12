@@ -16,9 +16,9 @@ namespace _04_Calculator_via_Functions
             int r = int.Parse(Console.ReadLine());
             Console.WriteLine("Book operator +, -, * or /");
             string _operator = Console.ReadLine();
-            double final_result;
 
             /*
+            double final_result;
             if (_operator == "+")
             final_result = Sum(value_a, value_b, r);
             if (_operator == "-")
@@ -55,35 +55,35 @@ namespace _04_Calculator_via_Functions
 
         static double Sum(double a, double b, int r)
         {
-            double result = Math.Round(a + b, r);
-            return result;
+            return Math.Round(a + b, r);
+            //return result;
         }
 
         static double Diff(double a, double b, int r)
         {
-            double result = Math.Round(a - b, r);
+            return Math.Round(a - b, r);
             //Console.WriteLine("Your result is " + result);
-            return result;
+            //return result;
         }
 
         static double Multiplication(double a, double b, int r)
         {
-            double result = Math.Round(a * b, r);
+            return Math.Round(a * b, r);
             //Console.WriteLine("Your result is " + result);
-            return result;
+            //return result;
         }
 
         static double Division(double a, double b, int r)
         {
-            double result = Math.Round(a / b, r);
+            return Math.Round(a / b, r);
             //Console.WriteLine("Your result is " + result);
-            return result;
+            //return result;
         }
 
         static double ReadLine()
         {
-            double booking = double.Parse(Console.ReadLine());
-            return booking;
+            return double.Parse(Console.ReadLine());
+            //return booking;
 
         }
         static void Main(string[] args)
